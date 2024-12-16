@@ -44,7 +44,7 @@ const FeatureSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section id="features" className="py-16 bg-gray-100">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8">
           Key Features of Our Platform

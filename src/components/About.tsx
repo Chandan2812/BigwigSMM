@@ -26,7 +26,7 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <>
+    <div id="about">
       <style>
         {`
           @keyframes slideIn {
@@ -53,7 +53,7 @@ const About: React.FC = () => {
           }
         `}
       </style>
-      <div className="text-center text-2xl md:text-4xl mt-10 font-bold ">About Us</div>
+      <div  className="text-center text-2xl md:text-4xl mt-10 font-semibold ">About Us</div>
       <div
         ref={sectionRef}
         className="flex flex-col gap-5 md:flex-row items-center p-4 px-10 md:px-20 py-10 md:py-16 bg-white"
@@ -98,7 +98,7 @@ const About: React.FC = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
