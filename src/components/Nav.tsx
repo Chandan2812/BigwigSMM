@@ -25,7 +25,7 @@ function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-colors duration-300 mb-10 ${
         isScrolled ? 'bg-white shadow-md' : 'bg-blue-50'
       }`}
     >
