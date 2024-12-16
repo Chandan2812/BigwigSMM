@@ -42,7 +42,7 @@ const pricingPlans = [
   function PricingPlans() {
     return (
       <div id="pricing" className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-semibold text-center text-gray-900 mb-12">
             Choose the Plan That Fits Your Needs
           </h2>

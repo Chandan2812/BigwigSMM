@@ -8,28 +8,28 @@ const TestimonialSection = () => {
           role: "Marketing Manager",
           company: "TechCorp",
           text: "This platform has completely transformed our social media strategy! The analytics and content scheduling are game-changers.",
-          image: "https://picsum.photos/100/100?random=1", // Random image 1
+          image: "https://randomuser.me/api/portraits/men/1.jpg", // Random image 1
         },
         {
           name: "Jane Smith",
           role: "Social Media Expert",
           company: "BrandCo",
           text: "I love the ease of managing multiple accounts in one place. The reporting feature is also incredibly helpful!",
-          image: "https://picsum.photos/100/100?random=2", // Random image 2
+          image: "https://randomuser.me/api/portraits/men/7.jpg", // Random image 2
         },
         {
           name: "Mark Johnson",
           role: "Content Strategist",
           company: "Creative Solutions",
           text: "The hashtag suggestions and automated posting features have significantly boosted our engagement. Highly recommend!",
-          image: "https://picsum.photos/100/100?random=3", // Random image 3
+          image: "https://lh3.googleusercontent.com/a-/ALV-UjWRzI2Z1MO95VkHQowijTU1kEv8xcL2IXZ6yCkmA5dnjTDzWbMr=w54-h54-p-rp-mo-br100", // Random image 3
         },
         {
           name: "Sara Lee",
           role: "Community Manager",
           company: "Innovative Group",
           text: "The social listening feature is a game-changer for us. We can now track all mentions and stay ahead of the conversation.",
-          image: "https://picsum.photos/100/100?random=4", // Random image 4
+          image: "https://randomuser.me/api/portraits/women/2.jpg", // Random image 4
         },
       ];
       
