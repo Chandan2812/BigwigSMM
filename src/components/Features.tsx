@@ -3,54 +3,55 @@ import { motion } from "framer-motion";
 function Features() {
   const featureData = [
     {
-      title: "Streamline social publishing across networks and locations",
+      title: "AI-Powered Post Creation",
       description:
-        "Easily scale your social media efforts with bulk publishing tools that customize posts for each channel and location. Utilize personalization tokens to automatically tailor content for every location, ensuring each post is both personalized and locally relevant.",
-      imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-bulk-publishing.png",
-    },
-    {
-      title: "Generate engaging social content with AI",
-      description:
-        "Effortlessly create engaging posts with Birdeye Social's AI powered content generator. Tailor content specifically to your industry and customers, and receive contextually relevant image recommendations based on your prompts to bring your posts to life.",
+        "Create engaging and high-quality posts effortlessly with Handly's AI-powered content generation. Tailor content to match your audience and industry, ensuring your message resonates with the right tone and style.",
       imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v3/img-social-publishing.png",
     },
     {
-      title: "Manage your social calendar",
+      title: "Generate High-Definition Images with AI",
       description:
-        "Schedule multiple posts across accounts and networks simultaneously and track them all through an intuitive visual calendar — filtering by date, status, channel, location, and region.",
-      imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-social-scheduling.png",
-    },
-    {
-      title: "Time your posts perfectly for maximum impact",
-      description:
-        "Get AI powered suggestions on the best time to publish your social content. Get multiple suggestions by channel and the desired goal such as maximizing reach or engagement. View post performance across days and time slots to identify performance trends and optimize your content performance.",
-      imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v3/img-increase-engagement.png",
-    },
-    {
-      title: "Build a shared library of social posts",
-      description:
-        "Build a library of pre-approved posts that can be quickly published by location managers. Repurpose proven posts to boost engagement and streamline your publishing process.",
+        "Bring your posts to life with stunning, high-definition images generated using OpenAI technology. Simply provide a prompt, and Handly creates visually appealing and contextually relevant images in seconds.",
       imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-post-library.png",
     },
     {
-      title: "Streamline approvals with automated workflows",
+      title: "Seamless Multi-Platform Posting",
       description:
-        "Seamlessly collaborate, review, and approve content in real-time, ensuring a flawless brand presence. Empower locations to create their own posts and route them to corporate for approval to ensure on-brand and consistent content across locations.",
-      imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v3/img-approval-workflows-v1.png",
+        "Save time by publishing posts across all your social media accounts simultaneously. With Handly, you can streamline posting to platforms like Facebook, Twitter, Instagram, and LinkedIn with just a click.",
+      imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-bulk-publishing.png",
     },
     {
-      title: "Monitor social engagement",
+      title: "AI-Driven Replies to Engage Your Audience",
       description:
-        "Engage your followers in real time with instant notifications — answering questions, responding to comments, and driving the conversation around your brand from a centralized inbox.",
+        "Respond to comments, questions, and messages effortlessly using AI-powered replies. Handly ensures timely and on-brand responses to boost audience engagement and build meaningful connections.",
       imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-social-engagement.png",
     },
     {
-      title: "Track performance by location",
+      title: "Schedule Posts with Visual Calendar",
       description:
-        "Measure top performing content, social reach, engagement, and audience growth by location or region — uncovering insights and trends you can use to optimize social strategy.",
-      imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/social/track-performance.png", // Keep the same image for now
+        "Plan and schedule your posts ahead of time using Handly's intuitive visual calendar. Filter posts by date, platform, or status and maintain a consistent social media presence with ease.",
+      imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-social-scheduling.png",
+    },
+    {
+      title: "AI-Optimized Posting Times",
+      description:
+        "Maximize your content's impact with AI-powered suggestions on the best times to post. Identify trends, boost reach, and optimize your posting schedule for maximum audience engagement.",
+      imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v3/img-increase-engagement.png",
+    },
+    {
+      title: "Analyze Post Performance and Insights",
+      description:
+        "Track post performance with advanced analytics. Measure reach, engagement, and audience growth across platforms, uncovering valuable insights to refine your social media strategy.",
+      imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/social/track-performance.png",
+    },
+    {
+      title: "Build a Shared Content Library",
+      description:
+        "Store and manage a library of pre-approved posts, images, and templates for quick access. Easily repurpose proven content and maintain consistency across all your social media channels.",
+      imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-post-library.png",
     },
   ];
+  
 
   const variants = {
     hidden: (direction: string) => ({
