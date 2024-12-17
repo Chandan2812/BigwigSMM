@@ -10,12 +10,10 @@ const SocialMediaHero: React.FC = () => {
           <span className="ml-1 text-blue-500">✨</span>
         </h4>
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
-          The only social media management tool that scales to your needs
+          Effortlessly scale your social media presence across multiple locations with Handly AI Social Media Management
         </h1>
         <p className="text-gray-600 leading-relaxed">
-          SocialPilot offers everything you need to scale your social media
-          management. From planning and bulk scheduling to analytics, AI
-          assistant, and collaboration tools, all in one platform.
+Create engaging posts in minutes, manage all your social channels seamlessly, and interact with customers – all from one powerful dashboard.
         </p>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-center justify-center lg:justify-start">
           <button className="bg-blue-600 text-white font-semibold py-3 px-6 rounded hover:bg-blue-700 transition">
@@ -30,7 +28,7 @@ const SocialMediaHero: React.FC = () => {
       {/* Right Section */}
       <div className="mt-8 lg:mt-0 lg:ml-8 w-full lg:w-auto">
         <img
-          src="https://themelooks.us/demo/smm24/html/preview/rtl/img/banner-img/slider-img-02.png" // Replace with your actual image URL
+          src="https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v3/img-social-banner-v2.png" // Replace with your actual image URL
           alt="Happy User"
           className="w-60 mx-auto md:w-full object-cover"
         />

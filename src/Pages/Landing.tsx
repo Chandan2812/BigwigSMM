@@ -14,11 +14,11 @@ function Landing() {
         <div>
             <Nav/>
             <SocialMediaHero/>
-            <About/>
+            <HowItWorks/>
             <FeatureSection/>
             <TestimonialSection/>
             <PricingPlans/>
-            <HowItWorks/>
+            <About/>
             <FAQ/>
             <Footer/>
         </div>
