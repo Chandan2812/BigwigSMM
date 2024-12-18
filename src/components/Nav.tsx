@@ -73,6 +73,9 @@ function Nav() {
           <button onClick={() => handleScrollToSection('pricing')} className="hover:text-black">
             Pricing
           </button>
+          <button onClick={() => handleScrollToSection('Blog')} className="hover:text-black">
+            Blog
+          </button>
         </div>
 
         <div className="md:block hidden">
