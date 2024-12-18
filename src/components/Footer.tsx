@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Social Media Icons
+import { faFacebook, faInstagram, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'; // Social Media Icons
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
@@ -36,9 +36,9 @@ function Footer() {
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Contact Info</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400"><FontAwesomeIcon icon={faEnvelope} className="mr-2" /> info@yourwebsite.com</li>
-              <li className="text-gray-400">1234 Your Street, City, Country</li>
-              <li className="text-gray-400">+1 234 567 890</li>
+              <li className="text-gray-400"><FontAwesomeIcon icon={faEnvelope} className="mr-2" /> info@bigwigmedia.in</li>
+              <li className="text-gray-400">Delhi,India</li>
+              <li className="text-gray-400">+91-11 49 384 555</li>
             </ul>
           </div>
 
@@ -59,10 +59,10 @@ function Footer() {
 
         {/* Social Media Links */}
         <div className="flex justify-center space-x-6 mt-12">
-          <FontAwesomeIcon icon={faFacebook} className="h-8 w-8 text-blue-600 hover:text-blue-700" />
-          <FontAwesomeIcon icon={faInstagram} className="h-8 w-8 text-pink-600 hover:text-pink-700" />
-          <FontAwesomeIcon icon={faTwitter} className="h-8 w-8 text-blue-400 hover:text-blue-500" />
-          <FontAwesomeIcon icon={faLinkedin} className="h-8 w-8 text-blue-700 hover:text-blue-800" />
+          <a href="https://www.facebook.com/bigwigmedia.in/"target='blank'><FontAwesomeIcon icon={faFacebook} className="h-8 w-8 text-blue-600 hover:text-blue-700" /></a>
+          <a href="https://www.instagram.com/bigwigmedia/"target='blank'><FontAwesomeIcon icon={faInstagram} className="h-8 w-8 text-pink-600 hover:text-pink-700" /></a>
+          <a href="https://x.com/bigwig_media"target='blank'><FontAwesomeIcon icon={faXTwitter} className="h-8 w-8 text-blue-400 hover:text-blue-500" /></a>
+          <a href="https://www.youtube.com/channel/UCA0GIfKW7ORxUT6_mMnEEzQ"target='blank'><FontAwesomeIcon icon={faYoutube} className="h-8 w-8 text-red-700 hover:text-red-800" /></a>
         </div>
 
         {/* Footer Bottom */}
