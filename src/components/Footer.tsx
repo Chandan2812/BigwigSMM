@@ -3,6 +3,12 @@ import { faFacebook, faInstagram, faXTwitter, faYoutube } from '@fortawesome/fre
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
+  const handleScrollToSection = (sectionId:any) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="bg-gray-800 text-white py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,11 +31,48 @@ function Footer() {
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Features</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Contact</a></li>
-            </ul>
+  <li>
+    <button
+      onClick={() => handleScrollToSection('home')}
+      className="text-gray-400 hover:text-white"
+    >
+      Home
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={() => handleScrollToSection('about')}
+      className="text-gray-400 hover:text-white"
+    >
+      About Us
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={() => handleScrollToSection('features')}
+      className="text-gray-400 hover:text-white"
+    >
+      Features
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={() => handleScrollToSection('pricing')}
+      className="text-gray-400 hover:text-white"
+    >
+      Pricing
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={() => handleScrollToSection('Blog')}
+      className="text-gray-400 hover:text-white"
+    >
+      Blogs
+    </button>
+  </li>
+</ul>
+
           </div>
 
           {/* Contact Info */}
