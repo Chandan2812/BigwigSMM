@@ -1,5 +1,6 @@
 
 import About from '../components/About';
+import Blog from '../components/Blog';
 import FAQ from '../components/Faq';
 import FeatureSection from '../components/Features';
 import Footer from '../components/Footer';
@@ -21,6 +22,7 @@ function Landing() {
             <TestimonialSection/>
             <PricingPlans/>
             <About/>
+            <Blog/>
             <FAQ/>
             <Footer/>
         </div>
