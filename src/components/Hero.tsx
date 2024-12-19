@@ -1,4 +1,5 @@
 import React from "react";
+import social from "../assets/Social media AI.png"
 
 const SocialMediaHero: React.FC = () => {
   return (
@@ -28,7 +29,7 @@ Create engaging posts in minutes, manage all your social channels seamlessly, an
       {/* Right Section */}
       <div className="mt-8 lg:mt-0 lg:ml-8 w-full lg:w-auto">
         <img
-          src="https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v3/img-social-banner-v2.png" // Replace with your actual image URL
+          src={social} // Replace with your actual image URL
           alt="Happy User"
           className="w-60 mx-auto md:w-full object-cover"
         />
