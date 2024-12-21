@@ -3,6 +3,19 @@ import { useState, useEffect } from 'react';
 function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const features = [
+    { name: "AI-Powered Post Creation", id: "feature1" },
+    { name: "Generate High-Definition Images with AI", id: "feature2" },
+    { name: "Seamless Multi-Platform Posting", id: "feature3" },
+    { name: "AI-Driven Replies to Engage Your Audience", id: "feature4" },
+    { name: "Schedule Posts with Visual Calendar", id: "feature5" },
+    { name: "AI-Optimized Posting Times", id: "feature6" },
+    { name: "Analyze Post Performance and Insights", id: "feature7" },
+    { name: "Build a Shared Content Library", id: "feature8" },
+  ];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,12 +28,16 @@ function Nav() {
     };
   }, []);
 
-  const handleScrollToSection = (id:any) => {
-    const section = document.getElementById(id);
+  const handleScrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const offset = 70; // Adjust for sticky navbar height
+      const sectionTop =
+        section.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: sectionTop, behavior: "smooth" });
     }
-    setIsOpen(false); // Close mobile menu if open
+    setIsOpen(false); // Close the mobile menu
+    setIsDropdownOpen(false);
   };
 
   return (
@@ -64,9 +81,48 @@ function Nav() {
           <button onClick={() => handleScrollToSection('home')} className="hover:text-black">
             Home
           </button>
-          <button onClick={() => handleScrollToSection('features')} className="hover:text-black">
-            Features
-          </button>
+          <div
+  className="relative"
+  onMouseEnter={() => setIsDropdownOpen(true)}
+  onMouseLeave={() => setIsDropdownOpen(false)}
+>
+  {/* Features Button with Dropdown Icon */}
+  <button className="hover:text-black flex items-center">
+    Features
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="2"
+      stroke="currentColor"
+      className="w-4 h-4 ml-1 transition-transform duration-200"
+      style={{
+        transform: isDropdownOpen ? "rotate(180deg)" : "rotate(0deg)",
+      }}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
+
+  {/* Dropdown Menu */}
+  {isDropdownOpen && (
+    <div className="absolute left-[-200px] bg-white shadow-lg rounded-lg p-4 grid grid-cols-3 gap-4 w-[700px] h-[400px] z-50">
+      {features.map((feature, index) => (
+        <button
+          key={index}
+          onClick={() => handleScrollToSection(feature.id)}
+          className="text-gray-600 hover:text-black text-sm"
+        >
+          {feature.name}
+        </button>
+      ))}
+    </div>
+  )}
+</div>
           <button onClick={() => handleScrollToSection('about')} className="hover:text-black">
             About Us
           </button>

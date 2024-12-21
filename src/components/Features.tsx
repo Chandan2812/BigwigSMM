@@ -7,48 +7,56 @@ function Features() {
       description:
         "Create engaging and high-quality posts effortlessly with Handly's AI-powered content generation. Tailor content to match your audience and industry, ensuring your message resonates with the right tone and style.",
       imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v3/img-social-publishing.png",
+      id: "feature1"
     },
     {
       title: "Generate High-Definition Images with AI",
       description:
         "Bring your posts to life with stunning, high-definition images generated using OpenAI technology. Simply provide a prompt, and Handly creates visually appealing and contextually relevant images in seconds.",
       imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-post-library.png",
+      id: "feature2"
     },
     {
       title: "Seamless Multi-Platform Posting",
       description:
         "Save time by publishing posts across all your social media accounts simultaneously. With Handly, you can streamline posting to platforms like Facebook, Twitter, Instagram, and LinkedIn with just a click.",
       imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-bulk-publishing.png",
+      id: "feature3"
     },
     {
       title: "AI-Driven Replies to Engage Your Audience",
       description:
         "Respond to comments, questions, and messages effortlessly using AI-powered replies. Handly ensures timely and on-brand responses to boost audience engagement and build meaningful connections.",
       imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-social-engagement.png",
+      id: "feature4"
     },
     {
       title: "Schedule Posts with Visual Calendar",
       description:
         "Plan and schedule your posts ahead of time using Handly's intuitive visual calendar. Filter posts by date, platform, or status and maintain a consistent social media presence with ease.",
       imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-social-scheduling.png",
+      id: "feature5"
     },
     {
       title: "AI-Optimized Posting Times",
       description:
         "Maximize your content's impact with AI-powered suggestions on the best times to post. Identify trends, boost reach, and optimize your posting schedule for maximum audience engagement.",
       imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v3/img-increase-engagement.png",
+      id: "feature6"
     },
     {
       title: "Analyze Post Performance and Insights",
       description:
         "Track post performance with advanced analytics. Measure reach, engagement, and audience growth across platforms, uncovering valuable insights to refine your social media strategy.",
       imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/social/track-performance.png",
+      id: "feature7"
     },
     {
       title: "Build a Shared Content Library",
       description:
         "Store and manage a library of pre-approved posts, images, and templates for quick access. Easily repurpose proven content and maintain consistency across all your social media channels.",
       imageUrl: "https://cdn2.birdeye.com/version2/v3/pages/2024/products/social/overview/v4/img-post-library.png",
+      id: "feature8"
     },
   ];
   
@@ -73,6 +81,7 @@ function Features() {
       {featureData.map((feature, index) => (
         <div
           key={index}
+          id={feature.id}
           className={`max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center gap-8 mt-${
             index === 0 ? 0 : 16
           }`}
